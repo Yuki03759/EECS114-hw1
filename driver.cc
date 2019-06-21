@@ -68,6 +68,8 @@ main (int argc, char* argv[])
   long double t_ms = stopwatch_stop (timer);
   printf ("My sort: %Lg seconds ==> %Lg million keys per second\n",
 	  t_ms, 1e-6 * N / t_ms);
+  //  for(int i= 0; i < N; i++)
+  //      printf("A[%d] = %d\n", i, A_ms[i]);
   assertIsSorted (N, A_ms);
   assertIsEqual (N, A_ms, A_qs);
   

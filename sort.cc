@@ -31,7 +31,19 @@ static int compare (const void* a, const void* b)
 
 void quickSort (int N, keytype* A)
 {
+    /*
+  printf("before quickSort\n");
+  for (int i = 0; i < N; i++){
+    printf("A[%d] = %lu\n", i, A[i]);
+  }
+  */
   qsort (A, N, sizeof (keytype), compare);
+  /*
+  printf("after quickSort\n");
+  for (int i = 0; i < N; i++){
+    printf("A[%d] = %lu\n", i, A[i]);
+  }
+  */
 }
 
 /* ============================================================

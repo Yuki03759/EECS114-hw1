@@ -1,0 +1,8 @@
+#!/bin/bash
+
+counter=2
+while [ $counter -le 68000000 ]
+do
+    ./insertion-sort $counter
+    counter=$(($counter*2))
+done
